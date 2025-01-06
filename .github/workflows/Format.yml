@@ -16,4 +16,4 @@ jobs:
       - name: Cache Scala
         uses: coursier/cache-action@v5
       - name: Format Check
-        run: scalafmt --test .
+        run: sbt scalafmtCheckAll
